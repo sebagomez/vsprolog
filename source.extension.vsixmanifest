@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Vsix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2010">
-  <Identifier Id="529BEEF5-C840-4A15-842B-DE466758A150">
+  <Identifier Id="CF617EA4-D877-4d72-8E42-EA96665AE675">
 	<Name>VSProlog for VS2013</Name>
 	<Author>@sebagomez</Author>
 	<Version>1.9</Version>
