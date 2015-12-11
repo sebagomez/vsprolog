@@ -5,6 +5,6 @@ VSProlog for VS2015 is following natural version of [VSProlog2010](https://visua
 
 It enables syntax coloring and the award winning "Go to Definition" command on Prolog source files (*.ari & *.pl).
 
-![img](src\Resources\preview.PNG)
+![img](preview.png)
 
 Get the compiled vsix from the [Visual Studio extensions library](https://visualstudiogallery.msdn.microsoft.com/50f0f293-bcb5-4f95-a9d0-afff92306973)
