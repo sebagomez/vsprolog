@@ -91,7 +91,7 @@
 %	Se elimina propiedad para bitmaps.
 %	
 %	   Rev 1.129   Feb 21 2006 16:44:32   DMendez-Yi
-%	AccessKey se agrega para Imágenes también 
+%	AccessKey se agrega para Imï¿½genes tambiï¿½n 
 %	SAC #19731 
 %	    
 %	
@@ -315,7 +315,7 @@
 %	gen_web_control_routine( label, Routine):-
 %		Para los textblocks se soporta un nuevo formato "auto" que incluye el <SPAN> 
 %		solo si hay evento asociado o el caption no emprieza con "<", 
-%		heurística que se usa para detectar contenido HTML.
+%		heurï¿½stica que se usa para detectar contenido HTML.
 %	
 %	
 %	   Rev 1.83   19 Feb 2004 14:40:06   AGS_Olimar
@@ -429,7 +429,7 @@
 %	   Rev 1.55   Mar 19 2003 10:33:06   DMendez-Olimar
 %	Error en generacion de nombre de la url para el help.
 %	Estaba pensado para generarse en cada fuente. 
-%	Ahora que es global se le agrego el nombre del programa llamador como parámetro.
+%	Ahora que es global se le agrego el nombre del programa llamador como parï¿½metro.
 %	
 %	   Rev 1.54   Mar 14 2003 10:07:44   DMendez-Olimar
 %	Soporte de imagenes con link (evento onclick) para Netscape 
@@ -476,7 +476,7 @@
 %	  considere el form como readonly
 %	
 %	   Rev 1.43   Aug 21 2002 09:35:38   GProto-Olimar
-%	-	"Emprolijamiento" del código html (comillas en los atributos,
+%	-	"Emprolijamiento" del cï¿½digo html (comillas en los atributos,
 %		etc.).
 %	
 %	   Rev 1.42   Aug 08 2002 12:09:22   APC-Olimar
@@ -523,7 +523,7 @@
 %	
 %	   Rev 1.31   Dec 26 2001 18:35:50   rpiaggio
 %	- Saco el newline al cerrar el tag de una imagen (bitmap). Ocasionaba que se muestre
-%	  un pequeño espacio despues de cada imagen y difiere con el comportamiento anterior.
+%	  un pequeï¿½o espacio despues de cada imagen y difiere con el comportamiento anterior.
 %	
 %	   Rev 1.30   Dec 21 2001 19:11:08   rpiaggio
 %	- Vuelvo para atras la generacion de bitmaps con eventos, excepto para el evento Get.
@@ -545,7 +545,7 @@
 %	- Cambio llamado a prompt_link_to_js_code por prompt_link_to_js_code_select.
 %	
 %	   Rev 1.26   Dec 18 2001 19:30:26   GProto-Solis
-%	-	Combo read only muestra el valor y no la descripción.
+%	-	Combo read only muestra el valor y no la descripciï¿½n.
 %	
 %	   Rev 1.25   Dec 18 2001 17:34:10   GProto-Solis
 %	-	El borde de las imagenes se pone siempre sin importar el browser
@@ -553,7 +553,7 @@
 %	
 %	   Rev 1.24   Dec 17 2001 12:11:18   rpiaggio
 %	- Arreglo en la gen_web_control_routines. Pasa a ser recursiva porque al generar
-%	  unas rutinas pueden assertarse la generación de nuevas. Incluyo mecanismo para
+%	  unas rutinas pueden assertarse la generaciï¿½n de nuevas. Incluyo mecanismo para
 %	  que no genere duplicadas.
 %	- Arreglo para que todas las rutinas al generarse llamen a
 %	  declare_start_web_control_routine. Esto es necesario en VB ya que pasamos tambien
@@ -574,26 +574,26 @@
 %	- Lint.
 %	
 %	   Rev 1.20   Dec 13 2001 14:25:40   GProto-Solis
-%	-	Implementación de los text blocks como funciones
+%	-	Implementaciï¿½n de los text blocks como funciones
 %	
 %	   Rev 1.19   Dec 13 2001 07:15:56   GProto-Solis
-%	-	Implementación de la rutina de manejo de bitmaps
+%	-	Implementaciï¿½n de la rutina de manejo de bitmaps
 %		(imagenes y variables de tipo bits).
 %	
 %	-	Agregado de una rutina onclick que genera el codigo
-%		del onclick considerando el código que pudo haber puesto
+%		del onclick considerando el cï¿½digo que pudo haber puesto
 %		el usuario.
 %	
 %	-	Agregado de la rutina gx_onclick que genera el codigo
-%		del onclick considerando el código que pudo haber puesto
+%		del onclick considerando el cï¿½digo que pudo haber puesto
 %		el usuario.
 %	
 %	-	Modificacion de la rutina de generacion de botones para
-%		considerar código Js que pueda haber incluido el usuario
+%		considerar cï¿½digo Js que pueda haber incluido el usuario
 %		para el evento onclick.
 %	
 %	-	Modificacion de la rutina de generacion de edits single
-%		line considerar código Js que pueda haber incluido el usuario
+%		line considerar cï¿½digo Js que pueda haber incluido el usuario
 %		para el evento onclick.
 %	
 %	
@@ -622,28 +622,28 @@
 %	- Idem anterior en la de combos.
 %	
 %	   Rev 1.12   Dec 04 2001 17:21:52   rpiaggio
-%	- Arreglo en la rutina del checkbox. Faltaban algunos t('+',5) en una expresión.
+%	- Arreglo en la rutina del checkbox. Faltaban algunos t('+',5) en una expresiï¿½n.
 %	
 %	   Rev 1.11   Dec 04 2001 01:12:06   GProto-Solis
-%	-	Implementación de la propiedad Jsonclick para edits y
+%	-	Implementaciï¿½n de la propiedad Jsonclick para edits y
 %		botones.
 %	
-%		. Agregado del parámetro sJSOnClickCode a la rutina de
+%		. Agregado del parï¿½metro sJSOnClickCode a la rutina de
 %		  gx_single_line_edit.
 %	
-%		. Agregado del parámetro sJSOnClickCode a la rutina de
+%		. Agregado del parï¿½metro sJSOnClickCode a la rutina de
 %		  gx_button.
 %	
-%	-	Modificación en web_ctrl_name_tag para que retorne como
-%		expresión la propiedad JsControlName.
+%	-	Modificaciï¿½n en web_ctrl_name_tag para que retorne como
+%		expresiï¿½n la propiedad JsControlName.
 %	
 %	   Rev 1.10   Nov 19 2001 16:49:32   AGS
 %	- Se implementaron las rutinas para render de combo, list, check y radio.
 %	- Se implementaron los controles .Net.
 %	
 %	   Rev 1.9   Oct 11 2001 14:48:58   GProto-Solis
-%	-	Se pasaron algunos predicados de webgral para aquí por el
-%		tamaño del webgral.
+%	-	Se pasaron algunos predicados de webgral para aquï¿½ por el
+%		tamaï¿½o del webgral.
 %	
 %	   Rev 1.8   Oct 08 2001 14:24:32   rpiaggio
 %	- Nuevo tipo "BUTTON" en botones web.
@@ -655,13 +655,13 @@
 %	- Objeto error view. Cambios de Propiedades que no funcionaban.
 %	
 %	   Rev 1.5   Jun 08 2001 11:03:32   GProto-Solis
-%	-	Se renombró skip_line_l a send_web_newline_l porque se 
+%	-	Se renombrï¿½ skip_line_l a send_web_newline_l porque se 
 %		producen conflictos con los reportes web.
 %	
 %	   Rev 1.4   May 04 2001 18:16:46   GProto-Solis
-%	-	Implementación de evento Click en Edits.
+%	-	Implementaciï¿½n de evento Click en Edits.
 %	
-%		Cambio en la rutina de manda los edits. Se le agregó un parámetro
+%		Cambio en la rutina de manda los edits. Se le agregï¿½ un parï¿½metro
 %		que indica si tiene o no link.
 %	
 %	   Rev 1.3   Feb 28 2001 15:53:34   aaguiar-Solis
@@ -712,13 +712,13 @@ generate_standard_program(Mod, Program):-
 	!,
 	fail.
 #else
-generate_standard_program(_, _):-
+generate_standard_program(_/* , _ ESTE PARAMETRO NO VA */):-
 	check_config($$, 'GENERATE_STD_WEB', 'Y'),
 	!.
 #endif
 generate_standard_program(_, _):-
 	!.
-
+/*
 generate_wap_functions(Mod):-
 	generate_wap_functions_l(Mod),
 	start_wap_routine,
@@ -727,7 +727,7 @@ generate_wap_functions(Mod):-
 	!.	
 generate_wap_functions(_):-
 	!.
-
+*/
 generate_web_standard_functions1(Mod):-
 	assert(generating_web_routines_i),
 	assert(force_ro_form_fail_i),	
