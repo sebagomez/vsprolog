@@ -11,6 +11,7 @@ namespace sebagomez.VSProlog.Helpers
 		const string COMMENTLINE_REG = @"\u0025(.*)"; // %
 		const string KEYLINE_REG = @"\u0023([\w]*)"; // #
 		const string HEAD_REG = @"^(\w)+(.*)\u003a\u002d"; // :-
+		const string HEAD_REG2 = @"^(\w)+(.*)."; // :-
 		const string TEXT_REG = @"'[^']*'";
 		const string PUBLIC_REG = @"^\u003a\u002d+(.)*";
 
@@ -112,6 +113,16 @@ namespace sebagomez.VSProlog.Helpers
 			}
 
 			reg = new Regex(HEAD_REG);
+			foreach (Match match in reg.Matches(formattedLine))
+			{
+				if (match.Index > commentStart)
+					continue;
+
+				int length = formattedLine.IndexOf("(");
+				result.Add(new ClassificationSpan(new SnapshotSpan(new SnapshotPoint(span.Snapshot, match.Index + curLoc), length != -1 ? length : match.Length), registry.GetClassificationType(PrologTokens.PrologTokenHelper.PrologHead)));
+			}
+
+			reg = new Regex(HEAD_REG2);
 			foreach (Match match in reg.Matches(formattedLine))
 			{
 				if (match.Index > commentStart)

@@ -728,6 +728,10 @@ generate_wap_functions(Mod):-
 generate_wap_functions(_):-
 	!.
 */
+pred(a) :- 1.
+
+pred(a).
+
 generate_web_standard_functions1(Mod):-
 	assert(generating_web_routines_i),
 	assert(force_ro_form_fail_i),	

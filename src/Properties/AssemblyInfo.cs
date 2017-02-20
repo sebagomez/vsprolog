@@ -11,8 +11,8 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("@sebagomez")]
 [assembly: AssemblyProduct("VSProlog2015")]
-[assembly: AssemblyCopyright("@sebagomez 2015")]
-[assembly: AssemblyTrademark("@sebagomez 2015")]
+[assembly: AssemblyCopyright("@sebagomez 2015-2017")]
+[assembly: AssemblyTrademark("@sebagomez 2015-2017")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]
 [assembly: CLSCompliant(false)]
@@ -28,4 +28,4 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.9.15.*")]
+[assembly: AssemblyVersion("1.9.20.*")]
