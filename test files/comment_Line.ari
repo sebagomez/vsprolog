@@ -1,1 +1,3 @@
-% este es un comentario con 'texto' y sigue el comentario
+/*este es un bloque comentado, */ pero esto no
+esta es un alinea % que tiene un comentario en el medio
+% y esta arranca con comentario

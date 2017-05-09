@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
-    <Identity Id="sebagomez.vsprolog.55f9a12e-faea-4b13-94af-e6de96fe7207" Version="2017.1" Language="en-US" Publisher="sebagomez" />
+    <Identity Id="sebagomez.vsprolog.CDA5304E-7640-406B-8638-F4708450B8A5" Version="2017.1" Language="en-US" Publisher="sebagomez" />
     <DisplayName>VSProlog</DisplayName>
     <Description xml:space="preserve">Arity Prolog extension for Visual Studio 2017</Description>
     <MoreInfo>https://github.com/sebagomez/vsprolog</MoreInfo>
