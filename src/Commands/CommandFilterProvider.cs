@@ -67,7 +67,7 @@ namespace sebagomez.VSProlog.Commands
 				if (string.IsNullOrWhiteSpace(currentPredicate))
 					return (int)VSConstants.S_OK;
 
-				DTE dte = Package.GetGlobalService(typeof(SDTE)) as DTE;
+				EnvDTE80.DTE2 dte = Package.GetGlobalService(typeof(DTE)) as EnvDTE80.DTE2;
 
 				if (dte == null || dte.ActiveDocument == null || dte.ActiveDocument.Object() == null || !(dte.ActiveDocument.Object() is TextDocument))
 					return (int)VSConstants.S_OK;

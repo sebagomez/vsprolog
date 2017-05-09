@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("VSProlog2015")]
-[assembly: AssemblyDescription("Prolog extension for Visual Studio 2015")]
+[assembly: AssemblyTitle("VSProlog")]
+[assembly: AssemblyDescription("Prolog extension for Visual Studio")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("@sebagomez")]
-[assembly: AssemblyProduct("VSProlog2015")]
+[assembly: AssemblyProduct("VSProlog")]
 [assembly: AssemblyCopyright("@sebagomez 2015-2017")]
 [assembly: AssemblyTrademark("@sebagomez 2015-2017")]
 [assembly: AssemblyCulture("")]
@@ -28,4 +28,4 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers 
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("1.9.20.*")]
+[assembly: AssemblyVersion("1.10.20.*")]
