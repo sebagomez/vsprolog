@@ -33,6 +33,11 @@ namespace sebagomez.VSProlog.Classifiers
 		[ContentType("Prolog")]
 		internal static FileExtensionToContentTypeDefinition PrologPlFileType = null;
 
+		[Export]
+		[FileExtension(".pro")]
+		[ContentType("Prolog")]
+		internal static FileExtensionToContentTypeDefinition PrologProFileType = null;
+
 
 		// Disable "Field is never assigned to..." compiler's warning. Justification: the field is assigned by MEF.
 #pragma warning disable 649
