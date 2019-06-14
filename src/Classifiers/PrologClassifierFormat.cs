@@ -46,7 +46,7 @@ namespace sebagomez.VSProlog.Classifiers
 		public ErrorFormat()
 		{
 			this.DisplayName = "This is an error"; //human readable version of the name
-			this.ForegroundColor = VSThemeColorHelper.CurrentTheme == VSThemeColorHelper.Theme.Dark? (System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString(VSThemeColorHelper.RED) :  Colors.Red;
+			this.ForegroundColor = VSThemeColorHelper.GetTokenColor(PrologTokens.PrologTokenHelper.PrologError);
 		}
 	}
 
@@ -60,7 +60,7 @@ namespace sebagomez.VSProlog.Classifiers
 		public CommentFormat()
 		{
 			this.DisplayName = "This is a comment"; //human readable version of the name
-			this.ForegroundColor = VSThemeColorHelper.CurrentTheme == VSThemeColorHelper.Theme.Dark ? (System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString(VSThemeColorHelper.GREEN) : Colors.Green;
+			this.ForegroundColor = VSThemeColorHelper.GetTokenColor(PrologTokens.PrologTokenHelper.PrologComment);
 		}
 	}
 
@@ -74,8 +74,7 @@ namespace sebagomez.VSProlog.Classifiers
 		public HeadFormat()
 		{
 			this.DisplayName = "This is a definition"; //human readable version of the name
-			this.IsBold = true;
-			this.ForegroundColor = VSThemeColorHelper.CurrentTheme == VSThemeColorHelper.Theme.Dark ? Colors.DarkCyan : Colors.DarkCyan;
+			this.ForegroundColor = VSThemeColorHelper.GetTokenColor(PrologTokens.PrologTokenHelper.PrologHead);
 		}
 	}
 
@@ -89,7 +88,7 @@ namespace sebagomez.VSProlog.Classifiers
 		public KeylineFormat()
 		{
 			this.DisplayName = "This is a definition"; //human readable version of the name
-			this.ForegroundColor = VSThemeColorHelper.CurrentTheme == VSThemeColorHelper.Theme.Dark ? (System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString(VSThemeColorHelper.BLUE) : this.ForegroundColor = Colors.Blue;
+			this.ForegroundColor = VSThemeColorHelper.GetTokenColor(PrologTokens.PrologTokenHelper.PrologKeyline);
 		}
 	}
 
@@ -103,7 +102,7 @@ namespace sebagomez.VSProlog.Classifiers
 		public KeywordFormat()
 		{
 			this.DisplayName = "This is a definition"; //human readable version of the name
-			this.ForegroundColor = VSThemeColorHelper.CurrentTheme == VSThemeColorHelper.Theme.Dark? (System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString(VSThemeColorHelper.BLUE) : Colors.Blue;
+			this.ForegroundColor = VSThemeColorHelper.GetTokenColor(PrologTokens.PrologTokenHelper.PrologKeyword);
 		}
 	}
 
@@ -116,8 +115,8 @@ namespace sebagomez.VSProlog.Classifiers
 	{
 		public PrologTextFormatDef()
 		{
-			this.DisplayName = "This is a text"; //human readable version of the name
-			this.ForegroundColor = VSThemeColorHelper.CurrentTheme == VSThemeColorHelper.Theme.Dark ? (System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString(VSThemeColorHelper.RED) : Colors.DarkRed;
+			this.DisplayName = "This is a text (string)"; //human readable version of the name
+			this.ForegroundColor = VSThemeColorHelper.GetTokenColor(PrologTokens.PrologTokenHelper.PrologText);
 		}
 	}
 
@@ -131,7 +130,21 @@ namespace sebagomez.VSProlog.Classifiers
 		public PublicTokenFormat()
 		{
 			this.DisplayName = "This is a text"; //human readable version of the name
-			this.ForegroundColor = VSThemeColorHelper.CurrentTheme == VSThemeColorHelper.Theme.Dark? Colors.Cyan : Colors.DarkCyan;
+			this.ForegroundColor = VSThemeColorHelper.GetTokenColor(PrologTokens.PrologTokenHelper.PrologPublictoken);
+		}
+	}
+
+	[Export(typeof(EditorFormatDefinition))]
+	[ClassificationType(ClassificationTypeNames = PrologTokens.PrologTokenHelper.PrologNumber)]
+	[Name("PrologNumberFormat")]
+	[UserVisible(false)]
+	[Order(Before = Priority.Default)]
+	internal sealed class NumberFormat : ClassificationFormatDefinition
+	{
+		public NumberFormat()
+		{
+			this.DisplayName = "This is a number"; //human readable version of the name
+			this.ForegroundColor = VSThemeColorHelper.GetTokenColor(PrologTokens.PrologTokenHelper.PrologNumber);
 		}
 	}
 
@@ -146,7 +159,7 @@ namespace sebagomez.VSProlog.Classifiers
 		{
 			this.DisplayName = "This is a text"; //human readable version of the name
 												 //this.ForegroundColor = Colors.DarkCyan;
-			this.IsBold = true;
+			//this.IsBold = true;
 		}
 	}
 

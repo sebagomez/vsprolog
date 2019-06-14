@@ -4,7 +4,7 @@
 	{
 		public enum PrologTokenTypes
 		{
-			PrologError, PrologComment, PrologHead, PrologKeyline, PrologKeyword, PrologText, PrologPublictoken, PrologParenthesis
+			PrologError, PrologComment, PrologHead, PrologKeyline, PrologKeyword, PrologText, PrologPublictoken, PrologParenthesis, PrologNumber
 		}
 
 		public sealed class PrologTokenHelper
@@ -17,6 +17,7 @@
 			public const string PrologText = "PrologText";
 			public const string PrologPublictoken = "PrologPublictoken";
 			public const string PrologParenthesis = "PrologParenthesis";
+			public const string PrologNumber = "PrologNumber";
 		}
 	}
 }

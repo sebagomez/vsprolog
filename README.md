@@ -7,4 +7,4 @@ VSProlog enables syntax coloring and the award winning "Go to Definition" comman
 
 ![img](preview.png)
 
-Get the compiled vsix from the [Visual Studio extensions library](https://marketplace.visualstudio.com/items?itemName=sebastiangomez.VSProlog)
+Get the compiled vsix from the [Visual Studio extensions library](https://marketplace.visualstudio.com/items?itemName=sebastiangomez.vsprolog2019)

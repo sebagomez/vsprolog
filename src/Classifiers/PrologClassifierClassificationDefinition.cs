@@ -54,6 +54,10 @@ namespace sebagomez.VSProlog.Classifiers
 		[Name(Helpers.PrologTokens.PrologTokenHelper.PrologPublictoken)]
 		internal static ClassificationTypeDefinition publictoken = null;
 
+		[Export(typeof(ClassificationTypeDefinition))]
+		[Name(Helpers.PrologTokens.PrologTokenHelper.PrologNumber)]
+		internal static ClassificationTypeDefinition number = null;
+
 #pragma warning restore 169
 	}
 }

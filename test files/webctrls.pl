@@ -1293,7 +1293,7 @@ web_control_routine_def1( end_js_anchor,		[	['sGXOnClickCode',		[[char,2048, 0, 
 	!.
 web_control_routine_def1( div_start, [	['sInternalName', 		[[char, 256, 0, 0], in] ],
 										['nVisible',  		[[int ,   5, 0, 0], in] ],
-										['nWidth',				[[int ,   5, 0, 0], in] ],		  
+										['nWid 8 th',				[[int ,   5, 0, 0], in] ],		  
 										['sWidthUnit',			[[char,   256, 0, 0], in] ],
 										['nHeight',				[[int ,   5, 0, 0], in] ],
 										['sHeightUnit',			[[char,   256, 0, 0], in] ],
